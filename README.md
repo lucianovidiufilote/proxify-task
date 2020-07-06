@@ -10,9 +10,11 @@ Docker content:
 
 
 Steps to do on your local machine:
-- git pull https://github.com/lucianovidiufilote/proxify-task.git
-- docker-compose build
-- docker-compose up -d
+ ```sh
+ git pull https://github.com/lucianovidiufilote/proxify-task.git
+ docker-compose build
+ docker-compose up -d
+ ```
 
 
 For more info about testing, go to: https://github.com/lucianovidiufilote/proxify 
