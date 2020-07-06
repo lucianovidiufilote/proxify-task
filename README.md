@@ -2,9 +2,9 @@
 
 Docker content:
 
--PHP-Apache container
+- PHP-Apache container
   - [Supervisor](http://supervisord.org/) installed & configured to 3 workers
--MariaDB container
+- MariaDB container
 
 
 
