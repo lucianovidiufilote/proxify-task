@@ -1,9 +1,9 @@
 ### Docker encapsulation for main Symfony App: https://github.com/lucianovidiufilote/proxify
 
 Docker content:
-- ** PHP-Apache container
-  - supervisor installed & conmfigured to 3 workers
-- ** MariaDB container
+-**PHP-Apache container
+  - [Supervisor](http://supervisord.org/) installed & conmfigured to 3 workers
+-**MariaDB container
 
 
 Steps to do on your local machine:
