@@ -2,7 +2,7 @@
 
 Docker content:
 -**PHP-Apache container
-  - [Supervisor](http://supervisord.org/) installed & conmfigured to 3 workers
+  - [Supervisor](http://supervisord.org/) installed & configured to 3 workers
 -**MariaDB container
 
 
