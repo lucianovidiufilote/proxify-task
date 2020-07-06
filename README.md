@@ -1,4 +1,4 @@
-## Docker encapsulation for main Symfony App: https://github.com/lucianovidiufilote/proxify
+### Docker encapsulation for main Symfony App: https://github.com/lucianovidiufilote/proxify
 
 Docker content:
 - **PHP-Apache container
