@@ -1,9 +1,20 @@
-# Proxify-Task
+### Docker encapsulation for main Symfony App: https://github.com/lucianovidiufilote/proxify
+
+Docker content:
+
+- PHP-Apache container
+  - [Supervisor](http://supervisord.org/) installed & configured to 3 workers
+- MariaDB container
 
 
-docker-compose build
-docker-compose up -d
-GOTO: http://proxify-task.local
 
-composer create-project symfony/website-skeleton proxify-task
-composer require symfony/apache-pack
+
+Steps to do on your local machine:
+ ```sh
+ git pull https://github.com/lucianovidiufilote/proxify-task.git
+ docker-compose build
+ docker-compose up -d
+ ```
+
+
+For more info about testing, go to: https://github.com/lucianovidiufilote/proxify 
