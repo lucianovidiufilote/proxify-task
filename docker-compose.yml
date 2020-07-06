@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  database:
+    build:
+      context: docker/database
+    environment:
+      - MYSQL_DATABASE=proxify
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ../mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  webservice:
+    build:
+      context: .
+      dockerfile: docker/webservice/Dockerfile
+    env_file:
+      - docker/.env
+    depends_on:
+      - database
+#    environment:
+#      - APP_ENV=${APP_ENV}
+#      - APP_SECRET=${APP_SECRET}
+#      - DATABASE_URL=mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@database:3306/${DATABASE_NAME}?serverVersion=5.7
+    volumes:
+      - ./app:/var/www/html/proxify-task
+    ports:
+      - "80:80"
